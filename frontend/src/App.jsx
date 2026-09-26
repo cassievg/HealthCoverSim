@@ -9,8 +9,13 @@ import QuoteDetail from './pages/quote-detail';
 import QuoteEdit from './pages/quote-edit';
 
 function App() {
+	document.body.style = 'background: #EEEBE5';
+
 	return (
 		<BrowserRouter>
+		
+			<div className='app-title'>Health Cover Sim</div>
+
 			<NavBar />
 
 			<Routes>
