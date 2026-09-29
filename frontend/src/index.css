@@ -1,3 +1,47 @@
-.page-view {
+.page-title {
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-weight: bold;
+}
 
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.table {
+    flex: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 2.3vh;
+    border: 1px solid;
+}
+
+td {
+    border: 1px solid;
+    padding: 1vw;
+    background-color: #e0d9d3;
+}
+
+th {
+    border: 1px solid;
+    padding: 1vw;
+    background-color: #9f958a;
+    color: white;
+}
+
+thead {
+    text-align: left;
+}
+
+tbody {
+    text-align: left;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 2.5vh;
 }

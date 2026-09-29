@@ -41,7 +41,7 @@ function QuoteList() {
 			<div className='page-title'>Quotes List</div>
 
 			<div className='table-container'>
-				<table className='table table-striped table-hover'>
+				<table className='table'>
 					<thead>
 						<tr>
 							<th scope='col'>ID</th>
@@ -80,7 +80,7 @@ function QuoteList() {
 										{quote.annual_discount}
 									</td>
 									<td>
-										{quote.created_at}
+										{new Date(quote.created_at).toLocaleString()}
 									</td>
 								</tr>
 							))

@@ -61,7 +61,11 @@ function QuoteDetail() {
 		} else {
 			return (calculateExtPrem(selectedQuote.extras_cover, 1));
 		}
-	}
+	};
+
+	const roundUp = (amt) => {
+		return Math.ceil((amt - Number.EPSILON)*100)/100;
+	};
 
 	useEffect(() => {
 		const initQuotes = async () => {
@@ -93,15 +97,16 @@ function QuoteDetail() {
 
 	return (
 		<div className='page-view'>
-			<div className='page-title'>Quotes List</div>
+			<div className='page-title'>Quotes Details</div>
 
 			<div className='table-container'>
-				<table className='table table-striped table-hover'>
+				<table className='table'>
 					<thead>
 						<tr>
 							<th scope='col'>ID</th>
 							<th scope='col'>Customer Name</th>
 							<th scope='col'>Created At</th>
+							<th scope='col'></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -115,7 +120,7 @@ function QuoteDetail() {
 										{quote.customer_name}
 									</td>
 									<td>
-										{quote.created_at}
+										{new Date(quote.created_at).toLocaleString()}
 									</td>
 									<td className='view-container'>
 										<button className='view-button' onClick={() => {openModal(quote)}}>
@@ -282,7 +287,7 @@ function QuoteDetail() {
 								<div className='data-label'>Discounted Yearly Premium:</div>
 								<div className='data'>${yearlyPremium(monthlyPremium(selectedQuote))} - {'('}{yearlyPremium(monthlyPremium(selectedQuote))} × {selectedQuote.annual_discount}%{')'}</div>
 								<div className='line'>-------------------------------------------------------</div>
-								<div className='calc-result'>${yearlyWithDiscount(yearlyPremium(monthlyPremium(selectedQuote)), selectedQuote.annual_discount)}</div>
+								<div className='calc-result'>${roundUp(yearlyWithDiscount(yearlyPremium(monthlyPremium(selectedQuote)), selectedQuote.annual_discount))}</div>
 							</div>
 
 							<div className='notes-container'>

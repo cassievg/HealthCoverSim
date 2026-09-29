@@ -249,7 +249,7 @@ app.put('/api/quotes/:id', (req, res) => {
             extras_cover = ?,
             payment_frequency = ?,
             annual_discount = ?,
-            notes = ?,
+            notes = ?
         WHERE id = ?
         `,
         [

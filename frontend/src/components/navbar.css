@@ -30,4 +30,10 @@
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 2.5vh;
+    color: black
+}
+
+.nav-link.active {
+    background-color: #d5cfc3;
+    font-weight: bold;
 }

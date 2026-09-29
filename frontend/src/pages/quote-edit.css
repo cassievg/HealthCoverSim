@@ -1,0 +1,61 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    border-style: groove;
+    width: 30%;
+    padding: 3vw;
+}
+
+.input-container {
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    height: 5vh;
+    width: 8vw;
+}
+
+.form-select {
+    width: 50%;
+    height: 5vh;
+}
+
+.form-control {
+    width: 80%;
+    height: 5vh;
+}
+
+.label {
+    margin-bottom: 1vh;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.form-check {
+    margin-top: 2vh;
+}
+
+.form-check-label {
+    margin-left: 0.5vw;
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+    color: red;
+}
+
+.edit-button {
+    margin-left: 2vw;
+}
