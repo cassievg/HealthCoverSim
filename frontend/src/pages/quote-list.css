@@ -1,0 +1,18 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.table {
+    flex: 1;
+}
+
+thead {
+    text-align: left;
+}
+
+tbody {
+    text-align: left;
+}
