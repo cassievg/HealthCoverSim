@@ -46,6 +46,7 @@ function QuoteList() {
 						<tr>
 							<th scope='col'>ID</th>
 							<th scope='col'>Customer Name</th>
+							<th scope='col'>Cover Type</th>
 							<th scope='col'>Hospital Cover</th>
 							<th scope='col'>Extras Cover</th>
 							<th scope='col'>Payment Frequency</th>
@@ -62,6 +63,9 @@ function QuoteList() {
 									</th>
 									<td>
 										{quote.customer_name}
+									</td>
+									<td>
+										{quote.cover_type}
 									</td>
 									<td>
 										{quote.hospital_cover}
