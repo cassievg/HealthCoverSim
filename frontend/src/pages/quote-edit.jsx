@@ -22,6 +22,7 @@ function QuoteEdit() {
 
 	const closeModal = () => {
 		setSelectedQuote(null);
+		setMessage('');
 	};
 
 	const deleteConfirmation = (quote) => {
@@ -415,7 +416,7 @@ function QuoteEdit() {
 							<button className='view-button' onClick={cancelDelete}>
 								Cancel
 							</button>
-							<button className='view-button' onClick={() => {deleteReq(deleteQuote)}}>
+							<button className='view-button' id='delete-btn' onClick={() => {deleteReq(deleteQuote)}}>
 								Delete
 							</button>
 						</div>

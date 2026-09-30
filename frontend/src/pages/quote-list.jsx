@@ -47,13 +47,17 @@ function QuoteList() {
 							<th scope='col'>ID</th>
 							<th scope='col'>Customer Name</th>
 							<th scope='col'>Cover Type</th>
+							<th scope='col'>Applicant 1 Age</th>
+							<th scope='col'>Applicant 1 Cover History</th>
+							<th scope='col'>Applicant 2 Age</th>
+							<th scope='col'>Applicant 2 Cover History</th>
 							<th scope='col'>Hospital Cover</th>
 							<th scope='col'>Extras Cover</th>
 							<th scope='col'>Payment Frequency</th>
 							<th scope='col'>Annual Discount</th>
 							<th scope='col'>Created At</th>
 						</tr>
-					</thead>
+					</thead>            
 					<tbody>
 						{
 							quotes.map((quote) => (
@@ -66,6 +70,18 @@ function QuoteList() {
 									</td>
 									<td>
 										{quote.cover_type}
+									</td>
+									<td>
+										{quote.applicant1_age}
+									</td>
+									<td>
+										{quote.applicant1_cover_history}
+									</td>
+									<td>
+										{quote.applicant2_age ? quote.applicant2_age : 'N/A'}
+									</td>
+									<td>
+										{quote.applicant2_cover_history ? quote.applicant2_cover_history : 'N/A'}
 									</td>
 									<td>
 										{quote.hospital_cover}

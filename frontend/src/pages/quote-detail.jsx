@@ -155,6 +155,11 @@ function QuoteDetail() {
 							</div>
 
 							<div className='data-container'>
+								<div className='data-label'>Cover Type:</div>
+								<div className='data'>{selectedQuote.cover_type}</div>
+							</div>
+
+							<div className='data-container'>
 								<div className='data-label'>Hospital Cover:</div>
 								<div className='data'>{selectedQuote.hospital_cover}</div>
 								<div className='data'>${hosCovConverter[selectedQuote.hospital_cover]} / adult / month</div>
@@ -183,7 +188,7 @@ function QuoteDetail() {
 								<div className='data'>Cover History: {selectedQuote.applicant1_cover_history}</div>
 								<div className='line'>-------------------------------------------------------</div>
 								<div className='calc-result'>LHC Loading %: {appLhcPct(selectedQuote, 1)}%</div>
-								<div className='calc-result'>LHC Loading Amt: {lhcAmt(selectedQuote.hospital_cover, appLhcPct(selectedQuote, 1))}</div>
+								<div className='calc-result'>LHC Loading Amt: ${lhcAmt(selectedQuote.hospital_cover, appLhcPct(selectedQuote, 1))}</div>
 								<div className='calc-result'>Applicant 1 Hospital Premium: ${calculateHosPrem(selectedQuote.hospital_cover, appLhcPct(selectedQuote, 1))}</div>
 								{selectedQuote.applicant1_cover_history === 'not sure' && 
 									<div className='warning-text'>

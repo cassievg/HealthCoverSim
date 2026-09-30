@@ -59,3 +59,24 @@
 .edit-button {
     margin-left: 2vw;
 }
+
+.delete-message {
+    text-align: center;
+}
+
+.delete-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.view-button {
+    flex: 1;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    height: 5vh;
+}
+
+#delete-btn {
+    background-color: rgb(255, 165, 165);
+}
