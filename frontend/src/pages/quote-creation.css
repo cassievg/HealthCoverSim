@@ -5,7 +5,7 @@
 
 .form {
     border-style: groove;
-    width: 30%;
+    width: 70%;
     padding: 5vh;
     background-color: #E9E3D9;
 }
@@ -23,7 +23,7 @@
 
 .submit-button {
     height: 5vh;
-    width: 8vw;
+    width: 16vw;
     background-color: white;
 }
 
@@ -34,7 +34,7 @@
 
 .form-control {
     width: 80%;
-    height: 5vh;
+    height: 20vh;
 }
 
 .label {

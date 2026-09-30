@@ -5,7 +5,7 @@
 
 .form {
     border-style: groove;
-    width: 30%;
+    width: 70%;
     padding: 3vw;
 }
 
@@ -22,7 +22,7 @@
 
 .submit-button {
     height: 5vh;
-    width: 8vw;
+    width: 20vw;
 }
 
 .form-select {
