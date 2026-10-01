@@ -73,11 +73,13 @@ Below lists the steps, formula, and rules used for each calculation step until t
 ### Applicant Premiums
 These are calculated separately per applicant. This includes the LHC loading whose value is determined by the applicant's age and cover history. This amount is only applied to the hospital cover and does not include the extras cover.
 
-The LHC amount is calculated as such:
+The LHC loading amount and the monthly premium for each applicant are calculated as such:
 1. If the applicant's cover history is no and the applicant's age is above 30, the LHC % is calculated as `(age - 30) * 2`. Otherwise, the LHC % is 0.
 2. The chosen hospital cover cost is multiplied by this percentage to obtain the LHC loading amount for this applicant.
 3. The LHC loading amount is added into the hospital cover cost to obtain the monthly premium for this applicant.
 4. If there is applicant 2, calculate the LHC and monthly premium using the same steps.
+
+In the case where the applicant is not sure about their cover history, the app will store the LHC percentage as 0, but will also display a warning that due to this uncertainty, the calculated amount for that applicant may be inaccurate.
 
 ### Hospital Total
 The hospital total is simply the total of the monthly premiums obtained in the applicant premiums.
